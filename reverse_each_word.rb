@@ -6,10 +6,11 @@ def reverse_each_word(word)
   
   array_of_string.each do |character| 
   
-    reverse = reverse + " " + character.reverse
+    reverse_array << character.reverse
     
   end 
   
+  reverse = reverse_array.join(" ")
   #reverse_array.each {|value| reverse = reverse + value}
   
   return reverse
